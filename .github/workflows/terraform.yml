@@ -5,8 +5,7 @@ on: push
 env:
   TF_LOG: INFO
   TF_INPUT: false
-  TFC_TOKEN_app_terraform_io: ${{ secrets.TFC_TOKEN_app_terraform_io }}
-  jobs:
+jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
