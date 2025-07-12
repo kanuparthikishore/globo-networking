@@ -27,9 +27,6 @@ jobs:
       with:
           terraform_version: 1.8.0
           cli_config_credentials_hostname: app.terraform.io
-      env:
-          TFC_TOKEN_app_terraform_io: ${{ secrets.TFC_TOKEN_app_terraform_io }}
-
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       id: init
