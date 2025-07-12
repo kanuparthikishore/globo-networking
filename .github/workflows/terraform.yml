@@ -5,7 +5,7 @@ on: push
 env:
   TF_LOG: INFO
   TF_INPUT: false
-  TFC_TOKEN_app_terraform_io: "9lR5tSCLVTQNKQ.atlasv1.4Ls0F6XXHdnRhM3TKOJDw74edC31BI1S0OjUeYpBhdy35R4yySh1PdY0RZANzjiMuOQ"
+  TFC_TOKEN_app_terraform_io: ${{ secrets.TFC_TOKEN_app_terraform_io }}
 jobs:
   terraform:
     name: 'Terraform'
