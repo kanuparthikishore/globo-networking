@@ -17,7 +17,7 @@ variable "prefix" {
 variable "environment" {
   type        = string
   description = "environment all"
-  default     = "developement21"
+  default     = "developement22"
 }
 
 variable "cidr_block" {
